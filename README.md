@@ -38,6 +38,13 @@ TWITTER_USERNAME="username"
 TWITTER_PASSWORD="password"
 TWITTER_EMAIL="your@email.com"
 ```
+## If errors with sqlite installation
+
+run
+```
+pnpm add better-sqlite3@latest --force and npm rebuild better-sqlite3
+```
+
 
 ## Install dependencies and start your agent
 
