@@ -1,7 +1,7 @@
 services:
     eliza:
         platform: linux/amd64
-        command: ["pnpm", "start", "--character=./characters/eliza.character.json"]
+        command: ["pnpm", "start", "--character=./characters/event.characters.json"]
         image: eliza-starter:v1
         stdin_open: true
         tty: true
@@ -10,6 +10,7 @@ services:
         environment:
             - DISCORD_APPLICATION_ID=
             - DISCORD_API_TOKEN=
+            - OPENAI_API_KEY=
             - REDPILL_API_KEY=
             - REDPILL_MODEL=
             - ELEVENLABS_XI_API_KEY=

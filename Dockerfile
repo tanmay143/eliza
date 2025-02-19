@@ -27,6 +27,8 @@ COPY ./characters ./characters
 RUN pnpm install 
 RUN pnpm build 
 
+USER root  
+
 # Create dist directory and set permissions
 RUN mkdir -p /app/dist && \
     chown -R node:node /app && \
@@ -58,4 +60,7 @@ COPY --from=builder /app/pnpm-lock.yaml /app/
 
 EXPOSE 3000
 # Set the command to run the application
-CMD ["pnpm", "start", "--non-interactive"]
+
+
+
+
