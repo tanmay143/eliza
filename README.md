@@ -42,9 +42,13 @@ TWITTER_EMAIL="your@email.com"
 
 run
 ```
-pnpm add better-sqlite3@latest --force and npm rebuild better-sqlite3
+pnpm add better-sqlite3@latest --force 
 ```
+Then run
 
+```
+npm rebuild better-sqlite3
+```
 
 ## Install dependencies and start your agent
 
